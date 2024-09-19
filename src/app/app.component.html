@@ -1,4 +1,18 @@
 <div>
-  <h1>Welcome to {{name}}'s Angular Project!</h1>
-  <p>I am {{age}} years old and learning Angular. This is the first version of my Angular app.</p>
+  <h1>Book Club: Featured Books</h1>
+
+  <div *ngFor="let book of books">
+
+    <h2>{{ book.title }}</h2> <!-- Show the book title -->
+
+    <p><strong>Author:</strong> {{ book.author }}</p> <!-- Show the author -->
+
+    <p><strong>Genre:</strong> {{ book.genre }}</p> <!-- Show the genre -->
+
+    <p><strong>Review:</strong> {{ book.review }}</p> <!-- Show the review -->
+
+    <p *ngIf="book.rating"><strong>Rating:</strong> {{ book.rating }}/5</p>
+  </div>
 </div>
+
+

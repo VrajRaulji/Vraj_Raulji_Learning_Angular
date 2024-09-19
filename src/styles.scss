@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for book details */
+  
+  .book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Book title styling */
+  .book-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  /* Author and other details styling */
+  
+  .book-details {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  /* Review styling */
+  
+  .book-review {
+    font-size: 14px;
+    color: #3498db;  
+    margin-bottom: 10px;
+}
+  
+  /* Rating styling */
+
+  .book-rating {
+    font-size: 16px;
+    color: #e74c3c;
+  }
+  
+  /* Responsive styling */
+  
+  @media (max-width: 600px) {
+    .book-container {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .book-title {
+      font-size: 20px;  
+    }
+}  

@@ -1,10 +1,8 @@
 <div>
-    <h2>Book List</h2>
-    <app-book-list-item 
-      *ngFor="let book of books; let i = index" 
-      [book]="book" 
-      [isEven]="i % 2 === 0">
-    </app-book-list-item>
+    <h2>Book List</h2>    
+    <div *ngFor="let book of books; let i = index">
+      <app-book-list-item [book]="book" [isEven]="i % 2 === 0"></app-book-list-item>
+    </div>
   </div>
   
   

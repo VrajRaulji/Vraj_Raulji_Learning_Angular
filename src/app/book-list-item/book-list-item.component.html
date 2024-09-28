@@ -1,8 +1,9 @@
-<div class="book-item">
-    <h2>{{ book.title }}</h2> <!-- Book title in a header tag -->
+<div [style.background-color]="backgroundColor" style="border: 2px solid;">
+    <h3>{{ book.title }}</h3>
     <p><strong>Author:</strong> {{ book.author }}</p>
     <p><strong>Genre:</strong> {{ book.genre }}</p>
     <p><strong>Review:</strong> {{ book.review }}</p>
+    <p *ngIf="book.rating"><strong>Rating:</strong> {{ book.rating }}/5</p>
   </div>
   
   

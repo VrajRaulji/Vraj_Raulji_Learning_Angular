@@ -1,18 +1,6 @@
 <div>
   <h1>Book Club: Featured Books</h1>
 
-  <div *ngFor="let book of books">
+  <app-book-list></app-book-list> <!-- Updated component tag -->
 
-    <h2>{{ book.title }}</h2> <!-- Show the book title -->
-
-    <p><strong>Author:</strong> {{ book.author }}</p> <!-- Show the author -->
-
-    <p><strong>Genre:</strong> {{ book.genre }}</p> <!-- Show the genre -->
-
-    <p><strong>Review:</strong> {{ book.review }}</p> <!-- Show the review -->
-
-    <p *ngIf="book.rating"><strong>Rating:</strong> {{ book.rating }}/5</p>
-  </div>
 </div>
-
-

@@ -1,6 +1,9 @@
 <div>
   <h1>Book Club: Featured Books</h1>
 
-  <app-book-list></app-book-list> <!-- Updated component tag -->
+  <div *ngIf="selectedBook">
+    <app-book-list-item [book]="selectedBook"></app-book-list-item>
+  </div>
 
+  <app-book-list></app-book-list>
 </div>
